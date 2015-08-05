@@ -1,0 +1,6 @@
+method: pop3
+server: pop.gmail.com
+port: 995
+ssl: true
+username: emaillove@yourcompany.com
+password: yourpassword
