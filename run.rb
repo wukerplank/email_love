@@ -11,8 +11,8 @@ require './lib/message_handler.rb'
 begin
   Lockfile.new('running.lock', retries: 0) do
     begin
-      config = YAML.load_file("config.yml")
-      users  = YAML.load_file("users.yml")
+      config = YAML.load_file("./config/config.yml")
+      users  = YAML.load_file("./config/users.yml")
 
       handler = MessageHandler.new(users)
 
